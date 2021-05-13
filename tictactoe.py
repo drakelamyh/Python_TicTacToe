@@ -170,7 +170,9 @@ def player2_choice():
 # x[0] is assigned to a random character, so that can use x[1] to x[9] in accordance to position 1 to 9 for ease of coding
 
 def display_game(x):
+    clear_output()
     print(f"{x[1]} | {x[2]} | {x[3]} \n{x[4]} | {x[5]} | {x[6]} \n{x[7]} | {x[8]} | {x[9]}\n")
+
 
 
 
@@ -194,7 +196,6 @@ def gaming():
         
         
         game_list[player1_choice()] = p1_mark
-        clear_output()
         display_game(game_list)
         
         if wintest(game_list) == True:
@@ -207,7 +208,6 @@ def gaming():
             break
 
         game_list[player2_choice()] = p2_mark
-        clear_output()
         display_game(game_list)
         
         if wintest(game_list) == True:
